@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NICODOGO</title>
+  <meta name="keywords" content="dog,housesitting,daycare,dogsitting">
+  <meta name="description" content="A website for Nicole's dog-sitting services.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+
+    
+<body>
+<header>
+    <h1><a href="index.html"><img src="images/logo.png" alt="Logo for NICODOGO"></a></h1>
+    
+    <nav>
+    <ul>
+    <li ><a href="index.html" style="position: relative;"><img src="images/bone.png" alt="pic of bone"><span style="position: absolute; top: -17px; left: 24px; width:110px">HOME</span></a></li>
+    <li ><a href="about.html" style="position: relative;"><img src="images/bone.png" alt="pic of bone"><span style="position: absolute; top: -17px; left: 24px; width:110px">ABOUT</span></a></li>
+    <li ><a href="services.html" style="position: relative;"><img src="images/bone.png" alt="pic of bone"><span style="position: absolute; top: -17px; left: 24px; width:110px">SERVICES</span></a></li>
+    <li ><a href="reviews.html" style="position: relative;"><img src="images/bone.png" alt="pic of bone"><span style="position: absolute; top: -17px; left: 24px; width:110px">REVIEWS</span></a></li>
+    <li ><a href="contact.html" style="position: relative;"><img src="images/bone.png" alt="pic of bone"><span style="position: absolute; top: -17px; left: 24px; width:110px">CONTACT</span></a></li>
+    </ul>
+    </nav>
+</header>
+<main>
+    <div id="main_visual">
+      <img src="images/main_visual.jpg" alt="pic as main visual">
+    </div>
+    
+    <section id="icon" style="text-align: center; margin:30px auto 30px;">
+    <a href="https://www.facebook.com/tadashi.konno.79"><img id="facebook" src="images/facebook.png"></a>
+    <a href="https://www.facebook.com/tadashi.konno.79"><img id="twitter" src="images/twitter.png"></a>
+    <a href="https://www.facebook.com/tadashi.konno.79"><img id="instagram" src="images/instagram.png"></a>
+    <a href="https://www.facebook.com/tadashi.konno.79"><img id="rover" src="images/rover.jpg"></a>
+    </section>
+</main>
+<footer>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="reviews.html">REVIEWS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <small>Copyright &copy; 2018 NICO DOGO, All Rights Reserved.</small>
+</footer>
+
+</body>
+
+</html>
