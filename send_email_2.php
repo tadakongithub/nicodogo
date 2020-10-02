@@ -1,27 +1,28 @@
 <?php
 
-    session_start();
+    if(isset($_POST['username'])){
+        $email = 'konnotadashi47@yahoo.co.jp';
 
-    $email = 'konnotadashi47@yahoo.co.jp';
-
-    mb_language('japanese');
-    mb_internal_encoding('UTF-8');
-
-    $subject = 'nicodogoからの問い合わせ';
-
-    function h($value){
-        return htmlspecialchars($value, ENT_QUOTES);
+        mb_language('japanese');
+        mb_internal_encoding('UTF-8');
+    
+        $subject = 'nicodogoからの問い合わせ';
+    
+        function h($value){
+            return htmlspecialchars($value, ENT_QUOTES);
+        }
+    
+        $name = h($_POST['username']);
+        $usermail = h($_POST['usermail']);
+        $message = h($_POST['inquiry']);
+    
+        $body = '名前: '.$name.'<br>'.'メール: '.$usermail.'<br>'.'メッセージ: '.$message;
+    
+        $success = mb_send_mail($email, $subject, $body);
     }
 
-    $name = h($_SESSION['mail']['username']);
-    $usermail = h($_SESSION['mail']['usermail']);
-    $message = h($_SESSION['mail']['inquiry']);
+    
 
-    $body = '名前: '.$name.'<br>'.'メール: '.$usermail.'<br>'.'メッセージ: '.$message;
-
-    $success = mb_send_mail($email, $subject, $body);
-
-    session_unset();
 ?>
 
 <html>

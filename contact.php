@@ -1,11 +1,4 @@
-<?php
-session_start();
 
-if (!empty($POST)){
-  $_SESSION['mail'] = $_POST;
-  header('Location: send_email_2.php');
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
